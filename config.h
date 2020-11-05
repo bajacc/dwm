@@ -98,7 +98,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY,			            XK_r,      spawn,          SHCMD("dwm_reload") }, // reload dwm
+	{ MODKEY,			            XK_r,      spawn,          SHCMD("dwm-reload") }, // reload dwm
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          SHCMD("pkill dwm") }, // quit dwm
 
 	{ 0, XF86XK_AudioRaiseVolume,	spawn,		SHCMD("pamixer --allow-boost -i 3; kill -44 $(pidof dwmblocks)") },
