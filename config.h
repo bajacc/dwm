@@ -34,6 +34,7 @@ static const Rule rules[] = {
 	{ "Code",     NULL,       NULL,       1 << 2,            0,           -1 },
 	{ "zoom",     NULL,       NULL,       1 << 3,            0,           -1 },
 	{ "discord",     NULL,       NULL,       1 << 4,            0,           -1 },
+	{ "Dragon-drag-and-drop",     NULL,       NULL,       (1 << 9) - 1,            0,           -1 },
 	{ "VirtualBox Manager",     NULL,       NULL,       1 << 9,            0,           -1 }, // todo: does not work
 };
 
