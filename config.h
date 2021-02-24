@@ -30,10 +30,13 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "St",     NULL,       NULL,       1 << 0,            0,           -1 },
 	{ "st-256color",     NULL,       NULL,       1 << 0,            0,           -1 },
+	{ "Brave-browser",  NULL,       NULL,       1 << 1,       0,           -1 },
 	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
 	{ "Code",     NULL,       NULL,       1 << 2,            0,           -1 },
+	{ "jetbrains-idea-ce",     NULL,       NULL,       1 << 2,            0,           -1 },
 	{ "zoom",     NULL,       NULL,       1 << 3,            0,           -1 },
 	{ "discord",     NULL,       NULL,       1 << 4,            0,           -1 },
+	{ "Slack",     NULL,       NULL,       1 << 4,            0,           -1 },
 	{ "Dragon-drag-and-drop",     NULL,       NULL,       (1 << 9) - 1,            0,           -1 },
 	{ "VirtualBox Manager",     NULL,       NULL,       1 << 8,            0,           -1 },
 };
