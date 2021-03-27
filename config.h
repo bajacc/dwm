@@ -33,6 +33,7 @@ static const Rule rules[] = {
 	{ "Brave-browser",  NULL,       NULL,       1 << 1,       0,           -1 },
 	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
 	{ "Code",     NULL,       NULL,       1 << 2,            0,           -1 },
+	{ "code-oss",     NULL,       NULL,       1 << 2,            0,           -1 },
 	{ "jetbrains-idea-ce",     NULL,       NULL,       1 << 2,            0,           -1 },
 	{ "zoom",     NULL,       NULL,       1 << 3,            0,           -1 },
 	{ "discord",     NULL,       NULL,       1 << 4,            0,           -1 },
