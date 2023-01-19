@@ -38,8 +38,9 @@ static const Rule rules[] = {
 	{ "zoom",     NULL,       NULL,       1 << 3,            0,           -1 },
 	{ "discord",     NULL,       NULL,       1 << 4,            0,           -1 },
 	{ "Slack",     NULL,       NULL,       1 << 4,            0,           -1 },
-	{ "Dragon-drag-and-drop",     NULL,       NULL,       (1 << 9) - 1,            0,           -1 },
+	{ "Dragon-drop",     NULL,       NULL,       (1 << 9) - 1,            0,           -1 },
 	{ "VirtualBox Manager",     NULL,       NULL,       1 << 8,            0,           -1 },
+	{ "Virt-manager",     NULL,       NULL,       1 << 8,            0,           -1 },
 };
 
 /* layout(s) */
@@ -112,7 +113,7 @@ static Key keys[] = {
 	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 10; kill -45 $(pidof dwmblocks)") },
 
 	{ 0,				XK_Print,	spawn,		SHCMD("maim pic-full-$(date '+%y%m%d-%H%M-%S').png") },
-	{ MODKEY,			XK_Print,	spawn,		SHCMD("maimpick") },
+	{ MODKEY,			XK_Print,	spawn,		SHCMD("dmenupics") },
 };
 
 /* button definitions */
