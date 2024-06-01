@@ -58,7 +58,6 @@ static const Layout layouts[] = {
 
 /* key definitions */
 #define MODKEY Mod4Mask
-#define OPTIONKEY Mod1Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -114,9 +113,6 @@ static Key keys[] = {
 	{ 0, XF86XK_AudioMute,			spawn,		SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
 	{ 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 10; kill -45 $(pidof dwmblocks)") },
 	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 10; kill -45 $(pidof dwmblocks)") },
-
-	{ OPTIONKEY, XK_Left,	spawn,		SHCMD("xdotool key Home") },
-	{ OPTIONKEY, XK_Right,	spawn,		SHCMD("xdotool key End") },
 
 	{ 0,				XK_Print,	spawn,		SHCMD("maim pic-full-$(date '+%y%m%d-%H%M-%S').png") },
 	{ MODKEY,			XK_Print,	spawn,		SHCMD("dmenupics") },
