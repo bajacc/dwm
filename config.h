@@ -79,6 +79,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,         			    XK_Return, spawn,          SHCMD("$TERMINAL") },
 	{ MODKEY,         			    XK_w,	   spawn,          SHCMD("$BROWSER") },
+	{ MODKEY,                       XK_c,      spawn,          SHCMD("xdotool keyup C key --clearmodifiers ctrl+Insert") },
+	{ MODKEY,                       XK_v,      spawn,          SHCMD("xdotool keyup V key --clearmodifiers shift+Insert") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
